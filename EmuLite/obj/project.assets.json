@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "EmuLite.Chip8/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/EmuLite.Chip8.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EmuLite.Chip8.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "EmuLite.Chip8/1.0.0": {
+      "type": "project",
+      "path": "../EmuLite.Chip8/EmuLite.Chip8.csproj",
+      "msbuildProject": "../EmuLite.Chip8/EmuLite.Chip8.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "EmuLite.Chip8 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Guilherme Martin\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Guilherme Martin\\Desktop\\EmuLite\\EmuLite.Chip8\\EmuLite.Chip8.csproj": {
+              "projectPath": "C:\\Users\\Guilherme Martin\\Desktop\\EmuLite\\EmuLite.Chip8\\EmuLite.Chip8.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
