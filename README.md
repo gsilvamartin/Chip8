@@ -1,2 +1,2 @@
 # EmuLite
-8 bits emulator
+Chip 8 emulator
